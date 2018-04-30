@@ -65,7 +65,9 @@ h2 {
 h3 {
     font-family: 'Courier New', Courier, monospace;
     font-size: 17px;
-    padding: 11px; 
+    padding-top: 11px;
+    padding-bottom: 11px;
+    font-weight: 600;  
 }
 h4 {
     font-family: 'Courier New', Courier, monospace;
@@ -168,7 +170,7 @@ footer a {
 }
 p {
     font-family: 'Courier New', Courier, monospace;
-    color: white;
+    color: #333;
 }
 input[type=text], select, textarea {
     width: 100%;
@@ -198,4 +200,9 @@ input[type=submit]:hover {
     border-radius: 5px;
     background-color: #f2f2f2;
     padding: 20px;
+}
+.about {
+    padding-top: 10px;
+    padding-bottom: 10px;
+    color: black;
 }
