@@ -1,82 +1,169 @@
-/*main.css*/
-html, body, head, h1, h2, h3, a, p, ul, ol, li {
-    padding:0;
-    border:0;
-    margin:0;
-    font:inherit;
-    font-size:100%;
-    }
-    body {
-    background: #9E9E9E;
-    }
-    h1 {
-    font-family: Broadway, "Tempus Sans ITC", sans-serif;
-    font-size: 36px;
-    font-weight: bold;
-    padding: 20px;
-    text-align: center;
-    color: #9E9E9E;
-    }
-    h2 {
-    font-family:"Tempus Sans ITC", sans-serif;
-    font-size: 19px;
-    font-weight: 200;
-    padding: 10px;
-    text-align: center;
-    background: #000000;
-    color: #FFFFFF;
-    }
-    h3 {
-    font-family:"Tempus Sans ITC", sans-serif;
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+h1 {
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 40px;
+    font-weight: 700;    
+    color: beige;
+   
+}
+
+h2 {
+    font-family: 'Courier New', Courier, monospace;
     font-size: 20px;
-    font-weight: bold;
+    font-weight: 500;
     padding: 5px;
-    color: #3E2723;
-    border-bottom: 2px solid #3E2723;
-    margin: 5px;
-    }
-    h2 strong {
-    font-weight: 1000;
-    }
-    a {
-    font-family:"Tempus Sans ITC", sans-serif;
-    font-size: 15px; 
-    color: #3E2723;
-    }
-    .header {
-    background: #3E2723;
-    }
-    .pictures, .plagues, .articles {
-    width: 600px;
-    margin: 0 auto;
-    }
-    .pictures li {
-    padding-bottom: 10px;
-    list-style-type: none;
-    }
-    .plagues img {
-    float: left;
-    padding-right: 10px;
-    }
-    .plagues li {
-    padding-bottom: 90px;
-    padding-right: 10px;
-    }
-    .articles li {
-    list-style-type: none;
-    padding-bottom: 5px;
-    }
-    .footer {
-    background: #3E2723;
-    color: #9E9E9E;
-    text-align: center;
-    padding: 8px;
-    margin-bottom: none;
-    }
-    .footer a {
-    color: #9E9E9E;
-    }
-    a:hover {
-    color: #D50000;
     text-decoration: underline;
+}
+h3 {
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 17px;
+    padding: 11px; 
+}
+h4 {
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 20px; 
+    padding: 2px;
+}
+.header {
+    padding: 20px;
+}
+body {
+    background-color: rgb(116, 99, 99)
+}
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #333;
+}
+
+li {
+    float: left;
+}
+a {
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 20px;
+}
+li a {
+    display: block;
+    color: beige;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+li a:hover:not(.active) {
+    background-color: rgb(78, 64, 64);
+}
+
+.active {
+    background-color: #4CAF50;
+}
+div.gallery {
+    border: 1px solid #ccc;
+}
+
+div.gallery:hover {
+    border: 1px solid #777;
+}
+
+div.gallery img {
+    width: 100%;
+    height: auto;
+}
+
+div.desc {
+    padding: 15px;
+    text-align: center;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+.responsive {
+    padding: 0 6px;
+    float: left;
+    width: 24.99999%;
+}
+
+@media only screen and (max-width: 700px) {
+    .responsive {
+        width: 49.99999%;
+        margin: 6px 0;
     }
+}
+
+@media only screen and (max-width: 500px) {
+    .responsive {
+        width: 100%;
+    }
+}
+
+.clearfix:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+footer { 
+    display: block;
+}
+footer a {
+    font-size: 10px;
+    color: white;
+}
+p {
+    font-family: 'Courier New', Courier, monospace;
+    color: white;
+}
