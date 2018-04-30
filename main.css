@@ -69,8 +69,8 @@ h3 {
 }
 h4 {
     font-family: 'Courier New', Courier, monospace;
-    font-size: 20px; 
-    padding: 2px;
+    font-size: 14px; 
+
 }
 .header {
     padding: 20px;
@@ -126,7 +126,7 @@ div.gallery img {
 }
 
 div.desc {
-    padding: 15px;
+    padding: 10px;
     text-align: center;
     font-family: 'Courier New', Courier, monospace;
 }
@@ -161,7 +161,7 @@ div.desc {
 }
 footer { 
     display: block;
-}
+    }
 footer a {
     font-size: 10px;
     color: white;
@@ -169,4 +169,33 @@ footer a {
 p {
     font-family: 'Courier New', Courier, monospace;
     color: white;
+}
+input[type=text], select, textarea {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    margin-top: 6px;
+    margin-bottom: 16px;
+    resize: vertical;
+}
+
+input[type=submit] {
+    background-color: #4CAF50;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+input[type=submit]:hover {
+    background-color: #45a049;
+}
+
+.container {
+    border-radius: 5px;
+    background-color: #f2f2f2;
+    padding: 20px;
 }

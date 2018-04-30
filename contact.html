@@ -12,11 +12,24 @@
        <li style="float:right"><a class="active" href="#about">About</a></li>
      </ul>
     
-     <h3><strong>Customer Reviews</strong></h3>
-<textarea rows="4" cols="50" placeholder="Add your reviews..."></textarea>
+     <h3>Contact Us</h3>
 
-<button type="submit" form="nameform" value="Submit">Submit</button>
+<div class="container">
+  <form action="/action_page.php">
+    <label for="fname">First Name</label>
+    <input type="text" id="fname" name="firstname" placeholder="Your name..">
 
+    <label for="lname">Last Name</label>
+    <input type="text" id="lname" name="lastname" placeholder="Your last name..">
+
+    <label for="subject">Subject</label>
+    <textarea id="subject" name="subject" placeholder="Write something.." style="height:200px"></textarea>
+
+    <input type="submit" value="Submit">
+  </form>
+</div>
+
+     
 <footer>
         <p>Contact information: <a href="mailto:@example.com">
        mira@bookbinding.com</a></p>
